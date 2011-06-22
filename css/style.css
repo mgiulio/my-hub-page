@@ -1,0 +1,68 @@
+/* Reset */
+/*<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css">
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.3.0/build/cssbase/base-min.css">*/
+* {
+	margin: 0;
+	padding: 0;
+}
+div {
+	margin: 0;
+}
+body {
+	background: #e2dae1 url(../img/sky.png) top left repeat-x; /* This is the sky gradient end stop */
+	font: 62.5%/1.6 "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", Verdana, sans-serif;
+}
+.header {
+	width: 819px;
+	height: 310px;
+	margin: 0 auto;
+	background: url(../img/masthead.gif) top left no-repeat;
+}
+.wrapper {
+	width: 819px;
+	margin: 0 auto;
+	text-align: left;
+	background: url(../img/wrapper-faux-cols.png) repeat-y left top;
+}
+.content {
+	overflow: hidden;
+	/*background: faux col;*/
+}
+.content .primary { 
+	width: 480px;
+	float: left;
+	padding-left: 70px;
+}
+.content .secondary { 
+	width: 200px;
+	float: right;
+	padding-right: 50px;
+}
+.content .secondary .promo {
+	padding-left: 10px;
+}
+.footer {
+	background-color:#b0b0b0;
+	padding: 1px 10px;
+}
+h1 {
+  font-size: 2.4em;
+  font-weight: normal;
+}
+h2 {
+  font-size: 2.0em;
+  font-weight: normal;
+}
+p, li {
+  font-size: 1.4em;
+}
+h1, h2, p {
+  margin: 1em 0;
+}
+.header h1 {
+  margin: 0;
+}
+.nav {
+	list-style: none;
+	padding: 10px;
+}
