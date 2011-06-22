@@ -7,33 +7,31 @@
 	<link rel="stylesheet" media="screen" type="text/css" href="css/style.css">
 </head>
 <body>
-	<div class="header">
-		<h1>This is the header</h1>
-	</div>
+	<h1 class="header">This is the header</h1>
 	<div class="wrapper">
 		<div class="content">
 			<div class="primary">
-				<h1>Lorem ipsum dolor</h1>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla.</p>
-				<h2>Ea commodo consequat</h2>
-				<p>Ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.</p>
-				<p>Ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
-				<h2>Magna aliquam erat volutpat</h2>
-				<p>Magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-				<p>Aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+				<div class="about">
+					<img src="" style="float: left;">
+					<h2>Hello,</h2>
+					<p style="text-indentation: 4em;">
+						I'm Giulio and this is my landing page.
+					</p>
+				</div>
+				<div class="lifestream">
+					<h2>Lifestream</h2>
+					<div id="lifestream"></div>
+			</div>
 			</div>
 			<div class="secondary">
-				<ul class="nav"> 
-					<li class="first"><a href="#">Home</a></li> 
-					<li><a href="#">About</a></li> 
-					<li><a href="#">News</a></li> 
-					<li><a href="#">Products</a></li> 
-					<li><a href="#">Services</a></li> 
-					<li><a href="#">Clients</a></li> 
-					<li><a href="#">Case Studies</a></li> 
-				</ul>
-				<div class="promo">
-					<p>Promo item goes here</p>
+				<div class="contact">
+					<h2>Contact</h2>
+				</div>
+				<div class="badges">
+					<h2>Badges</h2>
+					<ul>
+						<li><a href='https://www.ohloh.net/accounts/133518?ref=Detailed'><img alt='Ohloh profile for mgiulio' height='35' src='https://www.ohloh.net/accounts/133518/widgets/account_detailed.gif' width='191' /></a></li>
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -41,5 +39,42 @@
 			<p>Footer</p>
 		</div>
 	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+	<script>!window.jQuery && document.write('<script src="http://code.jquery.com/jquery-1.6.1.min.js"><\/script>');</script>
+	<!--- <script src="js/jquery.lifestream.js"></script> -->
+	<script src="https://github.com/christianv/jquery-lifestream/raw/master/jquery.lifestream-compiled.js"></script>
+	<script>
+		if (jQuery && $.fn.lifestream) {
+			$('#lifestream').lifestream({
+				limit: 1000,
+				list: [
+					{
+						service: 'github',
+						user: 'mgiulio'
+					},
+					{
+						service: 'twitter',
+						user: 'mgiulio'
+					},
+					{
+						service: 'delicious',
+						user: 'mgiulio'
+					},
+					{
+						service: 'flickr',
+						user: '34772705@N08'
+					},
+					{
+						service: 'youtube',
+						user: 'giuliomainardi0'
+					},
+					{
+						service: 'deviantart',
+						user: 'giuliom'
+					}
+				]
+			});
+		}
+  </script>
 </body>
 </html>

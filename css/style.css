@@ -59,10 +59,3 @@ p, li {
 h1, h2, p {
   margin: 1em 0;
 }
-.header h1 {
-  margin: 0;
-}
-.nav {
-	list-style: none;
-	padding: 10px;
-}
