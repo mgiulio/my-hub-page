@@ -59,3 +59,35 @@ p, li {
 h1, h2, p {
   margin: 1em 0;
 }
+/* jQuery Lifestream */
+.lifestream  h2 {
+	border-top: 1px solid #dddddd;
+	padding-top: 5px;
+}
+.lifestream h2 {
+	vertical-align: top;
+}
+.lifestream div  li {
+	list-style: none;
+	background: no-repeat 0px 5px;
+	padding: 5px 5px 5px 53px;
+    min-height: 58px;
+}
+.lifestream div  li.lifestream-delicious {
+	background-image: url(../img/delicious.png);
+}
+.lifestream div  li.lifestream-github {
+	background-image: url(../img/github.png);
+}
+.lifestream div  li.lifestream-twitter {
+	background-image: url(../img/twitter.png);
+}
+.lifestream div  li.lifestream-flickr {
+	background-image: url(../img/flickr.png);
+}
+.lifestream div  li.lifestream-youtube {
+	background-image: url(../img/youtube.png);
+}
+.lifestream div  li.lifestream-deviantart {
+	background-image: url(../img/deviantart.png);
+}
