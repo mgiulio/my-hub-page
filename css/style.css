@@ -1,93 +1,18 @@
-/* Reset */
-/*<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css">
-<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.3.0/build/cssbase/base-min.css">*/
-* {
-	margin: 0;
-	padding: 0;
-}
-div {
-	margin: 0;
+* { margin: 0; padding: 0; }
+html {
+	background-image: url(page-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
 }
 body {
-	background: #e2dae1 url(../img/sky.png) top left repeat-x; /* This is the sky gradient end stop */
-	font: 62.5%/1.6 "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", Verdana, sans-serif;
 }
-.header {
-	width: 819px;
-	height: 310px;
+div {
+	width: 720px;
+	height: 400px;
 	margin: 0 auto;
-	background: url(../img/masthead.gif) top left no-repeat;
-}
-.wrapper {
-	width: 819px;
-	margin: 0 auto;
-	text-align: left;
-	background: url(../img/wrapper-faux-cols.png) repeat-y left top;
-}
-.content {
-	overflow: hidden;
-	/*background: faux col;*/
-}
-.content .primary { 
-	width: 480px;
-	float: left;
-	padding-left: 70px;
-}
-.content .secondary { 
-	width: 200px;
-	float: right;
-	padding-right: 50px;
-}
-.content .secondary .promo {
-	padding-left: 10px;
-}
-.footer {
-	background-color:#b0b0b0;
-	padding: 1px 10px;
-}
-h1 {
-  font-size: 2.4em;
-  font-weight: normal;
-}
-h2 {
-  font-size: 2.0em;
-  font-weight: normal;
-}
-p, li {
-  font-size: 1.4em;
-}
-h1, h2, p {
-  margin: 1em 0;
-}
-/* jQuery Lifestream */
-.lifestream  h2 {
-	border-top: 1px solid #dddddd;
-	padding-top: 5px;
-}
-.lifestream h2 {
-	vertical-align: top;
-}
-.lifestream div  li {
-	list-style: none;
-	background: no-repeat 0px 5px;
-	padding: 5px 5px 5px 53px;
-    min-height: 58px;
-}
-.lifestream div  li.lifestream-delicious {
-	background-image: url(../img/delicious.png);
-}
-.lifestream div  li.lifestream-github {
-	background-image: url(../img/github.png);
-}
-.lifestream div  li.lifestream-twitter {
-	background-image: url(../img/twitter.png);
-}
-.lifestream div  li.lifestream-flickr {
-	background-image: url(../img/flickr.png);
-}
-.lifestream div  li.lifestream-youtube {
-	background-image: url(../img/youtube.png);
-}
-.lifestream div  li.lifestream-deviantart {
-	background-image: url(../img/deviantart.png);
+	background-color: #dddddd;
+	color: #ffffff;
+	display: none;
 }
