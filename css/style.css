@@ -1,6 +1,6 @@
 * { margin: 0; padding: 0; }
 html {
-	background-image: url(page-bg.jpg);
+	background-image: url(../img/page-bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -8,11 +8,19 @@ html {
 }
 body {
 }
-div {
-	width: 720px;
-	height: 400px;
-	margin: 0 auto;
-	background-color: #dddddd;
-	color: #ffffff;
-	display: none;
+#about {
+	/*position: absolute;*/
+	width: 200px;
+	background-color: #ffff00;
+	color: #0000ff;
+	font-family: cursive;
+	padding: 0 1em 1em 1em;
 }
+#lifestream {
+	width: 720px;
+	margin: 0 auto;
+	padding: 1em;
+	background-color: rgba(0,0,0,0);
+	color: #ffffff;
+}
+
