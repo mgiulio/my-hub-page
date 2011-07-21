@@ -9,12 +9,47 @@ html {
 body {
 }
 #about {
-	/*position: absolute;*/
+	position: absolute;
+	left: 0;
+	top: 0;
 	width: 200px;
 	background-color: #ffff00;
 	color: #0000ff;
 	font-family: cursive;
 	padding: 0 1em 1em 1em;
+}
+#bar {
+	list-style: none;
+	/* 
+		- rounded corners
+		- translucency
+	*/
+	background-color: #000000;
+	color: #ff00ff;
+}
+#bar > li {
+	float: right;
+}
+#overlay {
+	clear: both;
+	width: 720px; /* 960? */
+	margin: 80px auto 40px;
+	background-color: #000000;
+	color: #dddddd;
+	padding: 1em;
+	position: relative;
+	display: none;
+}
+#close {
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	width: 1em;
+	background-color: #444444;
+	color: orange;
+	border: 1 pixel solid #ffffff;
+	padding: 3px;
+	text-decoration: none;
 }
 #lifestream {
 	width: 720px;
@@ -23,4 +58,3 @@ body {
 	background-color: rgba(0,0,0,0);
 	color: #ffffff;
 }
-
