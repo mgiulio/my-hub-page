@@ -31,13 +31,13 @@ body {
 	float: right;
 }
 #overlay {
-	clear: both;
-	width: 720px; /* 960? */
-	margin: 80px auto 40px;
+	position: absolute;
+	width: 720px;
+	top: 80px;
+	left: 152px;
 	background-color: #000000;
 	color: #dddddd;
 	padding: 1em;
-	position: relative;
 	display: none;
 }
 #close {
