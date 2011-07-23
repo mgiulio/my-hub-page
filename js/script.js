@@ -58,7 +58,7 @@ var
 			var css = {
 				overlayBg: {
 					position: 'absolute',
-					width: '720px',
+					width: '740px', // 720+2*padx
 					height: '3000px',
 					top: '80px',
 					left: '152px',
@@ -72,7 +72,7 @@ var
 					top: '80px',
 					left: '152px',
 					color: '#dddddd',
-					padding: '1em',
+					padding: '10px',
 					display: 'none'
 				},
 				close: {
@@ -82,7 +82,7 @@ var
 					width: '1em',
 					'background-color': '#444444',
 					color: 'orange',
-					border: '1 pixel solid #ffffff',
+					border: '1px solid #777777',
 					padding: '3px',
 					'text-decoration': 'none'
 				},
