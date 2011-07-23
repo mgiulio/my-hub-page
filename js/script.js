@@ -6,8 +6,8 @@ var
 		{ service: 'github', user: 'mgiulio' },
 		{ service: 'twitter', user: 'mgiulio' },
 		{ service: 'wordpress', user: 'giuliom' },
-		{ service: 'youtube', user: 'giuliomainardi0' },
-		{ service: 'dribbble', user: 'mgiulio' }
+		{ service: 'youtube', user: 'giuliomainardi0' }//,
+		//{ service: 'dribbble', user: 'mgiulio' }
 	],
 	links = {
 		contact: $('#contact'),
@@ -62,7 +62,7 @@ var
 					height: '3000px',
 					top: '80px',
 					left: '152px',
-					'background-color': '#000000',
+					'background-color': '#000000', //#444444
 					opacity: 0.5,
 					display: 'none'
 				},
@@ -81,7 +81,7 @@ var
 					right: '-10px',
 					width: '1em',
 					'background-color': '#444444',
-					color: 'orange',
+					color: '#ffa500',
 					border: '1px solid #777777',
 					padding: '3px',
 					'text-decoration': 'none'
