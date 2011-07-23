@@ -22,41 +22,55 @@ var
 		},
 		show: function(jQuerySet) {
 			if (jQuerySet.length > 0) {
-				this._c.children().detach();
-				this._c.append(jQuerySet);
+				this._overlayContent.children().detach();
+				this._overlayContent.append(jQuerySet);
 			}
 			this._modalMask.show();
-			this._o.show();
+			this._overlayBg.show();
+			this._overlayFg.show();
 		},
 		hide: function() {
-			this._o.hide();
+			this._overlayFg.hide();
+			this._overlayBg.hide();
 			this._modalMask.hide();
 		},
 		// Privatesection
-		_o: undefined,
-		_c: undefined,
-		_close: undefined,
+		_overlayBg: undefined,
+		_overlayFg: undefined,
+		_overlayContent: undefined,
+		_closeBtn: undefined,
 		_modalMask: undefined,
 		_buildMarkup: function() {
 			$('body').append(
 				'<div id="modal-mask"></div>' +
-				'<div id="overlay">' +
-				'<a id="close" href="#">X</a>' +
-				'<div id="content"></div>' +
+				'<div id="overlay-bg"></div>' +
+				'<div id="overlay-fg">' +
+					'<a id="close" href="#">X</a>' +
+					'<div id="content"></div>' +
 				'</div>');
-			this._o = $('#overlay');
-			this._close = $('#close');
-			this._c = $('#content');
+			this._overlayBg = $('#overlay-bg');
+			this._overlayFg = $('#overlay-fg');
+			this._closeBtn = $('#close');
+			this._overlayContent = $('#content');
 			this._modalMask = $('#modal-mask');
 		},
 		_styleIt: function() {
 			var css = {
-				overlay: {
+				overlayBg: {
+					position: 'absolute',
+					width: '720px',
+					height: '3000px',
+					top: '80px',
+					left: '152px',
+					'background-color': '#000000',
+					opacity: 0.5,
+					display: 'none'
+				},
+				overlayFg: {
 					position: 'absolute',
 					width: '720px',
 					top: '80px',
 					left: '152px',
-					'background-color': '#000000',
 					color: '#dddddd',
 					padding: '1em',
 					display: 'none'
@@ -84,13 +98,14 @@ var
 				}
 			};
 			
-			this._o.css(css.overlay);
-			this._close.css(css.close);
+			this._overlayBg.css(css.overlayBg);
+			this._overlayFg.css(css.overlayFg);
+			this._closeBtn.css(css.close);
 			this._modalMask.css(css.mask);
 		},
 		_bindEvents: function() {
 			var that = this;
-			this._close.click(function() {
+			this._closeBtn.click(function() {
 				that.hide();
 				return false;
 			});
