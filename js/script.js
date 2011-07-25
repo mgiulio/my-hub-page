@@ -45,7 +45,7 @@ var
 				'<div id="modal-mask"></div>' +
 				'<div id="overlay-bg"></div>' +
 				'<div id="overlay-fg">' +
-					'<a id="close" href="#">X</a>' +
+					'<a id="close" href="#" title="close">Close</a>' +
 					'<div id="content"></div>' +
 				'</div>');
 			this._overlayBg = $('#overlay-bg');
@@ -75,17 +75,19 @@ var
 					padding: '10px',
 					display: 'none'
 				},
-				close: {
-					position: 'absolute',
-					top: '-10px',
-					right: '-10px',
-					width: '1em',
-					'background-color': '#444444',
-					color: '#ffa500',
-					border: '1px solid #777777',
-					padding: '3px',
-					'text-decoration': 'none'
-				},
+				close: (function() {
+					// image preloading here?
+					// Fetching img size frompreloading doesn't work
+					var w = h = 34;	
+					return {
+						position: 'absolute',
+						width: w,
+						height: h,
+						top: -h/2 + 'px',
+						right: -w/2 + 'px',
+						background: 'no-repeat center center url(img/overlay-close-btn.png)',
+						'text-indent': '-999999px'
+					};})(),
 				mask: {
 					position: 'fixed',
 					top: 0,
