@@ -120,10 +120,10 @@ overlay.init();
 bindMenuEvents();
 
 function bindMenuEvents() {
-	links.contact.click(function() {
-		overlay.show($('<h2>Contact Page</h2>'));
+	/* links.contact.click(function() {
+		overlay.show($('<h2>Contact</h2><p>Fellfree to drop me a line</p>'));
 		return false;
-	});
+	}); */
 	links.lifestream.click(function() {
 		overlay.show(
 			$('<div id="lifestream"></div>')
