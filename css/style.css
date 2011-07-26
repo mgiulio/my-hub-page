@@ -19,18 +19,30 @@ body {
 	padding: 0 1em 1em 1em;
 }
 #bar {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	text-align: center;
 	list-style: none;
-	/* 
-		- rounded corners
-		- translucency
-	*/
 	background-color: #000000;
-	color: #ff00ff;
 }
 #bar > li {
-	float: right;
+	display: inline;
 }
-
+#bar > li > a {
+	color: #ffa500;
+	text-decoration: none;
+}
+#bar > li > a:hover {
+	text-decoration: underline;
+}
+#bar > li > a:visited {
+	color: #d67600;
+}
+#bar > li > a:active{
+	color: #ffff00;
+}
 #lifestream {
 	width: 720px;
 	margin: 0 auto;
