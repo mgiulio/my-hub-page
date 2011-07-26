@@ -26,16 +26,13 @@ var
 				this._overlayContent.append(jQuerySet);
 			}
 			this._modalMask.show();
-			this._overlayBg.show();
 			this._overlayFg.show();
 		},
 		hide: function() {
 			this._overlayFg.hide();
-			this._overlayBg.hide();
 			this._modalMask.hide();
 		},
 		// Privatesection
-		_overlayBg: undefined,
 		_overlayFg: undefined,
 		_overlayContent: undefined,
 		_closeBtn: undefined,
@@ -43,12 +40,10 @@ var
 		_buildMarkup: function() {
 			$('body').append(
 				'<div id="modal-mask"></div>' +
-				'<div id="overlay-bg"></div>' +
 				'<div id="overlay-fg">' +
 					'<a id="close" href="#" title="close">Close</a>' +
 					'<div id="content"></div>' +
 				'</div>');
-			this._overlayBg = $('#overlay-bg');
 			this._overlayFg = $('#overlay-fg');
 			this._closeBtn = $('#close');
 			this._overlayContent = $('#content');
@@ -56,16 +51,6 @@ var
 		},
 		_styleIt: function() {
 			var css = {
-				overlayBg: {
-					position: 'absolute',
-					width: '740px', // 720+2*padx
-					height: '3000px',
-					top: '80px',
-					left: '152px',
-					'background-color': '#000000', //#444444
-					opacity: 0.5,
-					display: 'none'
-				},
 				overlayFg: {
 					position: 'absolute',
 					width: '720px',
@@ -73,7 +58,8 @@ var
 					left: '152px',
 					color: '#dddddd',
 					padding: '10px',
-					display: 'none'
+					display: 'none',
+					'background-color': 'rgba(0,0,0,0.5)'
 				},
 				close: (function() {
 					// image preloading here?
@@ -100,7 +86,6 @@ var
 				}
 			};
 			
-			this._overlayBg.css(css.overlayBg);
 			this._overlayFg.css(css.overlayFg);
 			this._closeBtn.css(css.close);
 			this._modalMask.css(css.mask);
