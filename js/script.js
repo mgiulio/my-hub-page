@@ -18,7 +18,6 @@ var
 			this._buildMarkup();
 			this._styleIt();
 			this._bindEvents();
-			this._horizCenter();
 		},
 		show: function(jQuerySet) {
 			if (jQuerySet.length > 0) {
@@ -97,8 +96,6 @@ var
 				that.hide();
 				return false;
 			});
-		},
-		_horizCenter: function() {
 		}
 	};
 
