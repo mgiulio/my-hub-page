@@ -24,12 +24,18 @@ var
 				this._overlayContent.children().detach();
 				this._overlayContent.append(jQuerySet);
 			}
-			this._modalMask.show();
-			this._overlayFg.show();
+			
+			var overlay = this;
+			this._modalMask.fadeIn(500, function() {
+				overlay._overlayFg.show(500);
+			});
+			
 		},
 		hide: function() {
-			this._overlayFg.hide();
-			this._modalMask.hide();
+			var overlay = this;
+			this._overlayFg.hide(500, function() {
+				overlay._modalMask.fadeOut(500);
+			});
 		},
 		// Privatesection
 		_overlayFg: undefined,
