@@ -8,7 +8,7 @@ html {
 }
 body {
 }
-#about {
+#greeting {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -18,7 +18,7 @@ body {
 	font-family: cursive;
 	padding: 0 1em 1em 1em;
 }
-#bar {
+#navbar {
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -27,29 +27,61 @@ body {
 	list-style: none;
 	background-color: #000000;
 }
-#bar > li {
+#navbar > li {
 	display: inline;
+	margin-left: 20px;
+	margin-right: 20px;
 }
-#bar > li > a {
+#navbar > li > a {
 	color: #ffa500;
 	text-decoration: none;
 }
-#bar > li > a:hover {
+#navbar > li > a:hover {
 	text-decoration: underline;
 }
-#bar > li > a:visited {
+#navbar > li > a:visited {
 	color: #d67600;
 }
-#bar > li > a:active{
+#navbar > li > a:active{
 	color: #ffff00;
 }
-#lifestream {
+.overlay {
+	position: absolute;
+	width: 720px;
+	top: 80px;
+	left: 50%;
+	margin-left: -360px;
+	color: #dddddd;
+	padding: 10px;
+	display: none;
+	background-color: rgba(0,0,0,0.5);
+}
+#close-btn {
+	position: absolute;
+	width: 34px;
+	height: 34px;
+	top: -17px;
+	right: -17px;
+	background: no-repeat center center url(../img/overlay-close-btn.png);
+	text-indent: -999999px;
+}
+#modal-mask {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.5;
+	background-color: #000000;
+	display: none
+}
+/* #lifestream {
 	width: 720px;
 	margin: 0 auto;
 	padding: 1em;
-	background-color: rgba(0,0,0,0);
+	background-color: rgba(0;0;0;0);
 	color: #aaaaaa;
-}
+} */
 #lifestream  a {
 	color: #ffa500;
 	text-decoration: none;
