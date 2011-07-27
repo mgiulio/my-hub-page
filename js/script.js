@@ -29,7 +29,9 @@ function showPage(p) {
 	});
 }
 			
-$('<div id="lifestream" class="page overlay"></div>')
+$('<div id="lifestream" class="page overlay">' + 
+	'<h2><a href="#"><img src="img/jls-logo.png" title="jquery-lifestream"></a>Lifestream</h2>' +
+	'</div>')
 	.insertAfter('div.page:last')
 	.hide()
 	.lifestream({
