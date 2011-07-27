@@ -29,8 +29,9 @@ function showPage(p) {
 	});
 }
 			
-/* $('<div id="lifestream" class="page"></div>')
+$('<div id="lifestream" class="page overlay"></div>')
 	.insertAfter('div.page:last')
+	.hide()
 	.lifestream({
 		limit: 1000,
 		list: [
@@ -42,7 +43,9 @@ function showPage(p) {
 			{ service: 'wordpress', user: 'giuliom' },
 			{ service: 'youtube', user: 'giuliomainardi0' }//,
 			//{ service: 'dribbble', user: 'mgiulio' }
-]}); */
+]});
+$('#navbar').append(
+	'<li><a href="#lifestream" title="My activity on the Net">Lifestream</a></li>');
 
 if (window.location.hash)
 	showPage($(window.location.hash));
