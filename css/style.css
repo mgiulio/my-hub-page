@@ -32,17 +32,17 @@ body {
 	margin-left: 20px;
 	margin-right: 20px;
 }
-#navbar > li > a {
+a {
 	color: #ffa500;
 	text-decoration: none;
 }
-#navbar > li > a:hover {
+a:hover {
 	text-decoration: underline;
 }
-#navbar > li > a:visited {
+a:visited {
 	color: #d67600;
 }
-#navbar > li > a:active{
+a:active{
 	color: #ffff00;
 }
 .overlay {
@@ -82,19 +82,6 @@ body {
 	background-color: rgba(0;0;0;0);
 	color: #aaaaaa;
 } */
-#lifestream  a {
-	color: #ffa500;
-	text-decoration: none;
-}
-#lifestream a:hover {
-	text-decoration: underline;
-}
-#lifestream a:visited {
-	color: #d67600;
-}
-#lifestream a:active {
-	color: #ffff00;
-}
 #lifestream > ul {
 	list-style: none;
 }
