@@ -1,5 +1,6 @@
 $('.page')
 	.addClass('overlay')
+	.hide()
 ;
 
 var 
