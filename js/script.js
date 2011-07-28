@@ -1,8 +1,13 @@
 $('body').addClass('js-enabled');
 
+$(document).keydown(function(e) {
+	if (e.which == 27)
+		closeBtn.click();
+});
+
 var 
 	modalMask = $('<div id="modal-mask"></div>').insertBefore('div.page:first'),
-	closeBtn = $('<a id="close-btn" href="#" title="close">Close</a>')
+	closeBtn = $('<a id="close-btn" href="#" title="Close. You can also press the Escape key">Close</a>')
 		.click(function() {
 			$(this)
 				.parent()
