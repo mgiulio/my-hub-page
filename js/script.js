@@ -1,7 +1,4 @@
-$('.page')
-	.hide()
-	.addClass('overlay')
-;
+$('body').addClass('js-enabled');
 
 var 
 	modalMask = $('<div id="modal-mask"></div>').insertBefore('div.page:first'),
