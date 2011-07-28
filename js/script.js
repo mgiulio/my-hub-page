@@ -1,6 +1,5 @@
 $('.page')
 	.addClass('overlay')
-	.hide()
 ;
 
 var 
@@ -29,8 +28,14 @@ function showPage(p) {
 	});
 }
 			
-$('<div id="lifestream" class="page overlay">' + 
-	'<h2><a href="#"><img src="img/jls-logo.png" title="jquery-lifestream"></a>Lifestream</h2>' +
+$(
+	'<div id="lifestream" class="page overlay">' + 
+		'<h2>' +
+			'<a href="http://christianv.github.com/jquery-lifestream/example.html">' + 
+				'<img src="img/jls-logo.png" title="Courtesy of jQuery Lifestream plugin">' +
+			'</a>' +
+			'Lifestream' +
+		'</h2>' +
 	'</div>')
 	.insertAfter('div.page:last')
 	.hide();

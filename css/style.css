@@ -6,7 +6,23 @@ html {
 	background-position: center center;
 	background-attachment: fixed;
 }
-body {
+h2 {
+	margin-bottom: 20px;
+	font-family: helvetica;
+	color: #ffffff;
+}
+a {
+	color: #ffa500;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:visited {
+	color: #d67600;
+}
+a:active{
+	color: #ffff00;
 }
 #greeting {
 	position: absolute;
@@ -31,19 +47,6 @@ body {
 	display: inline;
 	margin-left: 20px;
 	margin-right: 20px;
-}
-a {
-	color: #ffa500;
-	text-decoration: none;
-}
-a:hover {
-	text-decoration: underline;
-}
-a:visited {
-	color: #d67600;
-}
-a:active{
-	color: #ffff00;
 }
 .overlay {
 	position: absolute;
@@ -74,6 +77,10 @@ a:active{
 	opacity: 0.5;
 	background-color: #000000;
 	display: none
+}
+#lifestream > h2 > a > img {
+	margin-right: 10px;
+	vertical-align: middle;
 }
 #lifestream .content > ul {
 	list-style: none;
