@@ -75,17 +75,10 @@ a:active{
 	background-color: #000000;
 	display: none
 }
-/* #lifestream {
-	width: 720px;
-	margin: 0 auto;
-	padding: 1em;
-	background-color: rgba(0;0;0;0);
-	color: #aaaaaa;
-} */
-#lifestream > ul {
+#lifestream .content > ul {
 	list-style: none;
 }
-#lifestream li {
+#lifestream .content > ul > li {
 	padding: 5px 3px 5px 25px;
    background-repeat: no-repeat;
    background-position: left center;

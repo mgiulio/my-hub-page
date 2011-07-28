@@ -33,7 +33,9 @@ $('<div id="lifestream" class="page overlay">' +
 	'<h2><a href="#"><img src="img/jls-logo.png" title="jquery-lifestream"></a>Lifestream</h2>' +
 	'</div>')
 	.insertAfter('div.page:last')
-	.hide()
+	.hide();
+$('<div class="content"></div>')
+	.appendTo('#lifestream')
 	.lifestream({
 		limit: 1000,
 		list: [
