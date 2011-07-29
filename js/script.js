@@ -20,7 +20,7 @@ var
 ;
 
 $('#navbar').delegate('a', 'click',function() {
-	showPage($('#' + this.href.replace(/.*#/, '')));
+	showPage($(this.href.replace(/.*#/, '#')));
 });
 
 function showPage(p) {
