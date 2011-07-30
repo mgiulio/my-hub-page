@@ -49,10 +49,8 @@ $('<div class="content"></div>')
 		list: [
 			{ service: 'delicious', user: 'mgiulio' },
 			{ service: 'deviantart', user: 'giuliom' },
-			{ service: 'flickr', user: '60378309@N02' },
 			{ service: 'github', user: 'mgiulio' },
 			{ service: 'twitter', user: 'mgiulio' },
-			{ service: 'wordpress', user: 'giuliom' },
 			{ service: 'youtube', user: 'giuliomainardi0' }//,
 			//{ service: 'dribbble', user: 'mgiulio' }
 ]});
