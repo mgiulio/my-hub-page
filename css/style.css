@@ -30,16 +30,6 @@ a:visited {
 a:active{
 	color: #ffff00;
 }
-#greeting {
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 200px;
-	background-color: #ffff00;
-	color: #0000ff;
-	font-family: cursive;
-	padding: 0 1em 1em 1em;
-}
 #navbar {
 	position: fixed;
 	left: 0;
