@@ -54,8 +54,8 @@ $('<div class="content"></div>')
 			{ service: 'youtube', user: 'giuliomainardi0' }//,
 			//{ service: 'dribbble', user: 'mgiulio' }
 ]});
-$('#navbar').append(
-	'<li><a href="#lifestream" title="My activity on the Net">Lifestream</a></li>');
+$('<li><a href="#lifestream" title="My activity on the Net">Lifestream</a></li>')
+	.insertBefore($($('#navbar').children().get(-1)));
 
 if (window.location.hash)
 	showPage($(window.location.hash));
