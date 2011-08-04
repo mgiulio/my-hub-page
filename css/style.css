@@ -6,6 +6,13 @@ html {
 	background-position: center center;
 	background-attachment: fixed;
 }
+body {
+	font-family:
+		helvetica
+		/*verdana*/
+		/*Trebuchet Ms*/
+	;
+}
 h2 {
 	margin-bottom: 20px;
 	font-family: helvetica;
