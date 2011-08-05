@@ -62,7 +62,7 @@ a:active{
 }
 #webdev, #about {
 	line-height: 1.6;
-	text-align: justify;
+	/*text-align: justify;*/
 }
 .js-enabled .page {
 	position: absolute;
@@ -104,4 +104,34 @@ a:active{
 	padding: 5px 3px 5px 25px;
    background-repeat: no-repeat;
    background-position: left center;
+}
+/* About page */
+#about #my-avatar {
+	float: left; 
+	margin: 0 10px 10px 0; 
+	border: 1px solid #d67600;
+}
+#about blockquote {
+	font-size: 13px;
+	font-style: italic;
+}
+#about blockquote.top {
+	width: 40%; 
+	line-height: 1.25; 
+	 text-align: left; 
+}
+#about blockquote.bottom {
+	border-top: 1px dotted #dddddd; 
+	text-align: right;
+}
+#about cite {
+	font-style: normal;
+}
+#about cite.bottom {
+	text-align: right;
+}
+#about h3 {
+	font-family: georgia;
+	/*border-bottom: 1px dotted #dddddd;*/
+	color: #f3c496;
 }
