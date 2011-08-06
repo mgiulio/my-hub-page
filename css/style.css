@@ -135,11 +135,14 @@ a:active{
 	padding-left: 5px;
 }
 #about blockquote.bottom {
+	margin-top: 30px;
 	border-top: 1px dotted #dddddd; 
 	text-align: right;
 }
+#about blockquote.bottom p {
+	margin: 0;
+}
 #about cite.bottom {
-	text-align: right;
 }
 #about h3 {
 	font-family: georgia;
