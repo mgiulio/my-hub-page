@@ -115,17 +115,28 @@ a:active{
 	font-size: 13px;
 	font-style: italic;
 }
+#about blockquote cite {
+	font-style: normal;
+}
 #about blockquote.top {
 	width: 40%; 
 	line-height: 1.25; 
-	 text-align: left; 
+	text-align: left; 
+	position: relative;
+}
+#about blockquote.top cite {
+	position: absolute;
+	left: 100%;
+	top: 0;
+	margin-left: 10px;
+	border-left: 1px dotted #dddddd;
+	width: 64px;
+	height: 64px;
+	padding-left: 5px;
 }
 #about blockquote.bottom {
 	border-top: 1px dotted #dddddd; 
 	text-align: right;
-}
-#about cite {
-	font-style: normal;
 }
 #about cite.bottom {
 	text-align: right;
