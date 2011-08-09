@@ -1,3 +1,13 @@
+/* $('html').removeClass('backgroundsize');
+delete Modernizr.backgroundsize; */
+ 
+/* Full page background image:
+ *	use a jQuery fallback if CSS3 background-size
+ * is not supported
+ */
+if (!Modernizr.backgroundsize)
+	fullPageBg();
+	
 var 
 	modalMask = $('<div id="modal-mask"></div>').insertBefore('div.page:first'),
 	closeBtn = $('<a id="close-btn" href="#" title="Close. You can also press the Escape key">Close</a>')
@@ -69,4 +79,20 @@ function keyboardShortcuts() {
 		if (e.which == 27)
 			closeBtn.click();
 	});	
+}
+
+function fullPageBg() {
+	var 
+		w = $(window),
+		img = $('<img src="img/page-bg.jpg" alt="" style="position: fixed; top: 0; left: 0;">')
+			.prependTo('body'),
+		aspectRatio = img.width() / img.height()
+	;
+	
+	w.resize(function() {
+		if (aspectRatio  < w.width() / w.height())
+			img.css('width', '100%').css('top', (w.height() - img.height())/2 + 'px');
+		else
+			img.css('height', '100%').css('left', (w.width() - img.width())/2 + 'px');
+	}).resize();
 }
