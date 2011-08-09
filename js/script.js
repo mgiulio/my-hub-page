@@ -1,5 +1,3 @@
-$('body').addClass('js-enabled');
-
 var 
 	modalMask = $('<div id="modal-mask"></div>').insertBefore('div.page:first'),
 	closeBtn = $('<a id="close-btn" href="#" title="Close. You can also press the Escape key">Close</a>')

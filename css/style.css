@@ -1,11 +1,15 @@
+/* Reset */
 * { margin: 0; padding: 0; }
-html {
+/* Full page background image */
+html.no-js, html.backgroundsize {
 	background-image: url(../img/page-bg.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
 	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: #d2691e;
+	background-size: cover;
 }
+/* General typography */
 body {
 	font-family:
 		/*helvetica*/
@@ -64,7 +68,7 @@ a:active{
 	line-height: 1.6;
 	/*text-align: justify;*/
 }
-.js-enabled .page {
+.js .page {
 	position: absolute;
 	top: 80px;
 	left: 50%;
