@@ -85,7 +85,8 @@
 								).done(function() {
 									img[visibleImg].attr('src', nextImageUrl);
 									visibleImg = 1 - visibleImg;
-									aspectRatio = img[visibleImg].width() / img[visibleImg].height()
+									aspectRatio = img[visibleImg].width() / img[visibleImg].height();
+									//w.resize();
 									window.setTimeout(f, cfg.duration);
 								});
 						}, cfg.duration);
