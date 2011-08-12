@@ -2,7 +2,6 @@
 	var
 		cfg = { // Set default configuration
 			//image: '',
-			}
 		},
 		i, n, // Reusable vars
 		techniques = [
@@ -30,36 +29,45 @@
 				apply: function() {
 					var
 						img,
-						w = $(window),
-						aspectRatio = 1024 / 768 // FIXME
+						wnd = $(window),
+						aspectRatio,
+						imgStyle
 					;
 					
-					//Create the <img>
-					img = $('<img src="' + cfg.image + '" alt="" style="position: fixed; top: 0; left: 0;">')
-						.prependTo('body')
-						.
-					;
-					
-					// Handle window resizing
-					w.resize(function() {
+					wnd.resize(function() {
 						var 
-							wndWidth = w.width(),
-							wndHeight = w.height(),
-							imgNode = img.get(0)
+							wndWidth = wnd.width(),
+							wndHeight = wnd.height()
 						;
 						if (aspectRatio < wndWidth / wndHeight) {
-							imgNode.width = wndWidth;
-							imgNode.height = wndWidth / aspectRatio;
-							imgNode.style.top = (wndHeight - imgNode.height)/2 + 'px';
-							imgNode.style.left = '0px';
+							img.width = wndWidth;
+							img.height = wndWidth / aspectRatio;
+							imgStyle.top = (wndHeight - img.height)/2 + 'px';
+							imgStyle.left = '0px';
 						}
 						else {
-							imgNode.height = wndHeight;
-							imgNode.width = wndHeight * aspectRatio;
-							imgNode.style.left = (wndWidth - imgNode.width)/2 + 'px';
-							imgNode.style.top = '0px';
+							img.height = wndHeight;
+							img.width = wndHeight * aspectRatio;
+							imgStyle.left = (wndWidth - img.width)/2 + 'px';
+							imgStyle.top = '0px';
 						}
-					}).resize();
+					});
+					
+					/* img = $('<img src="' + cfg.image + '" alt="" style="position: fixed; top: 0; left: 0;">')
+						.prependTo('body'); */
+					img = new Image();
+					img.alt = '';
+					imgStyle = img.style;
+					imgStyle.position = 'fixed';
+					imgStyle.top = '0px';
+					imgStyle.left = '0px';
+					imgStyle.display = 'none';
+					img.onload = function() {
+						aspectRatio = this.width / this.height;
+						wnd.resize();
+						$(this).prependTo('body').fadeIn(2000);
+					};
+					img.src = cfg.image;
 				}
 			}
 		]
