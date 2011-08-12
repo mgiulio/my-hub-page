@@ -12,15 +12,15 @@ var
 		})
 ;
 
-fullPageBgImg({
+fullPgBgImg({
 	images: [
-		'img/full-page-bg/pieces-of-me.jpg',
+		//'img/full-page-bg/pieces-of-me.jpg',
 		'img/full-page-bg/toys_by_hcube.jpg',
-		'img/full-page-bg/toys_by_momoclax.jpg',
+		/*'img/full-page-bg/toys_by_momoclax.jpg',
 		'img/full-page-bg/Empire_City_by_gamefan84.jpg',
-		'img/full-page-bg/food___by_laprovocation.jpg',
+		'img/full-page-bg/food___by_laprovocation.jpg', */
 		//'img/full-page-bg/food_by_PoetryInDespair1.jpg',
-		'img/full-page-bg/Miami_City_by_Furiousxr.jpg',
+		/* 'img/full-page-bg/Miami_City_by_Furiousxr.jpg',
 		'img/full-page-bg/The_city_turns_Orange_by_gilad.jpg',
 		'img/full-page-bg/amsler_grid.gif',
 		'img/full-page-bg/escher_grid.jpg',
@@ -28,7 +28,7 @@ fullPageBgImg({
 		'img/full-page-bg/grid-4quad12x12.gif',
 		'img/full-page-bg/grid2000b.gif',
 		'img/full-page-bg/img-amsler-grid.gif',
-		'img/full-page-bg/layout_grid.gif'
+		'img/full-page-bg/layout_grid.gif' */
 	],
 	duration: 2000
 });

@@ -9,7 +9,7 @@
 				//easing:
 			}
 		},
-		i, n // Reusable vars
+		i, n, // Reusable vars
 		numImages,
 		techniques = [
 			{
@@ -18,6 +18,14 @@
 					return false;
 				},
 				apply: function() {
+					/*
+						background-image: url(../img/full-page-bg/pieces-of-me.jpg);
+						background-attachment: fixed;
+						background-position: center center;
+						background-repeat: no-repeat;
+						background-color: #d2691e;
+						background-size: cover;
+					*/
 				}
 			},
 			{
@@ -93,7 +101,7 @@
 	// Use the first feasible technique
 	// So, the techniques array must be sorted in ...
 	for (i = 0, n = techniques.length; i < n; ++i) {
-		if (techniques[i].isApplicable() {
+		if (techniques[i].isApplicable()) {
 			techniques[i].apply();
 			break;
 		}

@@ -1,20 +1,5 @@
 /* Reset */
 * { margin: 0; padding: 0; }
-/* Full page background image */
-html.no-js, html.backgroundsize {
-	background-image: url(../img/full-page-bg/pieces-of-me.jpg);
-	background-attachment: fixed;
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-color: #d2691e;
-	background-size: cover;
-}
-.width {
-	width: 100%;
-}
-.height {
-	height: 100%;
-}
 /* General typography */
 body {
 	font-family:
