@@ -59,13 +59,14 @@
 					img.alt = '';
 					imgStyle = img.style;
 					imgStyle.position = 'fixed';
+					imgStyle.zIndex = -9999;
 					imgStyle.top = '0px';
 					imgStyle.left = '0px';
 					imgStyle.display = 'none';
 					img.onload = function() {
 						aspectRatio = this.width / this.height;
 						wnd.resize();
-						$(this).prependTo('body').fadeIn(2000);
+						$(this).appendTo('body').fadeIn(2000);
 					};
 					img.src = cfg.image;
 				}
