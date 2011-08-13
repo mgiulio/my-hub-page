@@ -14,7 +14,7 @@ var
 
 fullPgBgImg({
 	image: 
-		//'img/full-page-bg/pieces-of-me.jpg'
+		'img/full-page-bg/pieces-of-me.jpg'
 		//'img/full-page-bg/toys_by_hcube.jpg'
 		//'img/full-page-bg/toys_by_momoclax.jpg'
 		//'img/full-page-bg/Empire_City_by_gamefan84.jpg'
@@ -28,7 +28,7 @@ fullPgBgImg({
 		//'img/full-page-bg/grid-4quad12x12.gif',
 		//'img/full-page-bg/grid2000b.gif',
 		//'img/full-page-bg/img-amsler-grid.gif',
-		'img/full-page-bg/layout_grid.gif'
+		//'img/full-page-bg/layout_grid.gif'
 });
 
 $('#navbar').delegate('a', 'click',function() {

@@ -1,4 +1,5 @@
-/* jQuery. */ var fullPgBgImg = function(userCfg) {
+(function($) {
+$.fullPgBgImg = function(image, usrCfg) {
 	var
 		cfg = { // Set default configuration
 			//image: '',
@@ -74,7 +75,15 @@
 		]
 	;
 	
-	$.extend(cfg, userCfg);
+	// Parameters juggling
+	if (typeof image === 'object')
+		usrCfg = image;
+	else if (typeof image === 'string')
+		if (!usrCfg)
+			usrCfg = {image: image};
+		else 
+			usrCfg.image = image;
+	$.extend(cfg, usrCfg);
 	
 	// Use the first feasible technique
 	// So, the techniques array must be sorted in ...
@@ -85,3 +94,4 @@
 		}
 	}
 };
+})(jQuery);
