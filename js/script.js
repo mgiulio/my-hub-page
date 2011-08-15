@@ -12,7 +12,7 @@ var
 		})
 ;
 
-fullPgBgImg({
+$.fullPgBgImg({
 	image: 
 		'img/full-page-bg/pieces-of-me.jpg'
 		//'img/full-page-bg/toys_by_hcube.jpg'
