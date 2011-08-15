@@ -43,6 +43,7 @@ ul {
 	left: 0;
 	top: 0;
 	width: 100%;
+	margin-left: 0;
 	text-align: center;
 	list-style: none;
 	background-color: #000000;
