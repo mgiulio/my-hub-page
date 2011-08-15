@@ -12,7 +12,8 @@ body {
 }
 h2 {
 	margin-bottom: 20px;
-	font-family: helvetica;
+	font-family: 'Dancing Script', arial, serif;
+   text-shadow: 1px 3px 1px #000;
 	color: #ffffff;
 }
 h3 {
