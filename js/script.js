@@ -12,9 +12,10 @@ var
 		})
 ;
 
-$.fullPgBgImg({
-	image: 
-		'img/full-page-bg/pieces-of-me.jpg'
+$.fullPgBgImg('img/full-page-bg/pieces-of-me.jpg', {
+	//technique: 'CSS3'
+	//image: 
+		//'img/full-page-bg/pieces-of-me.jpg'
 		//'img/full-page-bg/toys_by_hcube.jpg'
 		//'img/full-page-bg/toys_by_momoclax.jpg'
 		//'img/full-page-bg/Empire_City_by_gamefan84.jpg'
