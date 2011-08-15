@@ -35,6 +35,9 @@ a:visited {
 a:active{
 	color: #ffff00;
 }
+ul {
+	margin-left: 2em;
+}
 #navbar {
 	position: fixed;
 	left: 0;
