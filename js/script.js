@@ -38,18 +38,27 @@ $('#navbar').delegate('a', 'click',function() {
 keyboardShortcuts();	
 //lifestream();
 
-if (window.location.hash)
-	showPage($(window.location.hash));
+if (window.location.hash) {
+	var el = $(window.location.hash);
+	if (el.hasClass('page'))
+		showPage(el);
+	else {
+		var page = el.closest('div.page');
+		showPage(page, function() {
+			window.location.href = window.location.href;
+		});
+	}
+}
 
 /*
  * Function definitions
  */
  
-function showPage(p) {
+function showPage(p, done) {
 	p.append(closeBtn);
 	
 	modalMask.fadeIn(500, function() {
-		p.show(500);
+		p.show(500, done);
 	});
 }
 
