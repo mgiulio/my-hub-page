@@ -60,6 +60,7 @@ ul {
 	background-color: rgba(0,0,0,0.5);
 	color: #dddddd;
 	padding: 10px;
+	border-radius: 20px;
 }
 #webdev, #about {
 	line-height: 1.6;
@@ -162,3 +163,34 @@ ul {
 .lifestream-googlereader { background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAAQJQTFRFAAAA+eLindptnNlqm9domNRmldJhl9Jiusv8jspYicZSprv1grJYfatSqqmp6Keniqb/eqVReaNPd6JOdqFMdZ5LcZpJb5hHqpaWbZZF4JOU35CS3o+P4Y6N342MY4v/3oeH3oaGXYb8pYWF3oWF24SA3YSD34OF239/UX7/3Hx8RHnUoXNzOGz/M2vKNGn/KGLu1F5d01lY0llZ01ZWDlXaCVTSB0/Q0E5QAkq2mkJC2d7uytbwfp/3VoL3TXr/2nR0Hlr34+r8ka7/eZv/bZP/ao/sQnL/OnDjLGbuIWHUnrf/g7JYrKysQ3foJ2bToN1vF13Z4pOTz0hI////DkSagqCk6AAAAAF0Uk5TAEDm2GYAAADLSURBVBjTRY/nVsJQEIRXFBEVAQWxAEqxi2JFeklPSMJNZt//VbwklO/ffGf2nFkiovlxJn96ViielyhivlgkdveSqf304eVahBtiEQYxlerDNxFvaNzdPn8QDx1H1W5GXsvn6+b9J7EC4Ojp3fLbfFG++iPODaSBZk1tdrO1kFgzDLUP6PaU3Z1HKYaAM3YAU7CLiRSqPBgYfSg/K+FZoxkUHfjlEwRS1KGPMRPAG78GX8tGlMQBfO4tp7MwPfFidmy/y/Gz2+lR/AfuwTtvA8hEhAAAAABJRU5ErkJggg==);}
 .lifestream-wordpress { background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2BJREFUeNpcU11MU2cYfs5PhRXoD1iko5QWKj+6tjJ/ICqaOOdwms3oxTYniZnLsmQXSyR6tSxm2YUxmTdLlgzmLuayzSyZPxNdNMQwSAe6AaUxUCn9NdaD0Ha0pVDac/Z+Ry7MTvKcnO/9nuc57/t978vZz/Thf08z4SPCXsKWtdgEYZDQS/C/SBbZq8PpVhcjPu9pgec/O7C5fvKd9ma+vlRJs3hkmeOvjPq33nkY+asoy18S/+IaH9xaBusI182GsobvP+jivcG4wzMdRUhKYKVQRGNNJfa7HXDba2a6+24p8VQ2SPy3CXnBuOstZvCVo9rwypWPD1vPXx02Dz4MYyGTg6wAHMcjlV3BWDCO1aJc1XeqS9vvDa4kssuNpLvDMnBS2oPj57qlS/e8LYWiDI8/hh0bayHyvFpagswmwhJ+6zmKEo2IXL4Qc33+QzmVs5sxTr3pso+LAtfy6cFt2NVcC17UQAGP04e2o+fwDsiUBS+K8D9Nqobp3Eod0zAtM+jq3tmq/2bAp25qS0uwSuKRoITRWUmNGcpegkCmv96fVdfj0XkwDdMyA7u7rto+EppHdCGDFrMRujItOEEDz0wciqJg3yYLHQaPWCqrGgwH5tC0obKBPmvVIqkmTtSsw8D0E2gEHnuazIAiw1alVQVt9SaUCwrWV2gRmU8jNJeEwHNsS2AG0UdSImg16eGJJOnkFXSSQXE1j1pdCW78eZ9YPNosBnSYS9E/NoOy4hKm4gvsKqPM4I/Lnql/OxurkckrGH+covT0eNVmwkQggt+H/gH71xtbHHDaLBgYm8KeViuYhsJ3mUHvbV/I3V5f+chaVQ5POKGm/cnrbfg7NIdgYgnJbA6brRvwLJuHUa/Dga2tfqYh2iVm4KO7//n93puZM/uaMvHFZeRWi+qhxXOARleFoakYNRQwm1zCF++9ljnR158lzY9My6/NRM+MlJo79vXV2MltlkBBBqalReiN61FjqYOUk1lLosNuChz/9maEcUlzlgnVWWDD9FP3djSc/U4dpoNOm/fd9hbdTsfLNkbyBJ6EfxmdXrztC7vZMAUvfHjx+OUHz4eJ9Q6hnPULwVjh3O2qcHUeEQ0mVyGdsKgjW1H5uJB6NpmeHLqW9g1PUoi1ZIqQ+U+AAQBxOVz5xw02pQAAAABJRU5ErkJggg==);}
 .lifestream-youtube { background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAAHVQTFRFAAAA1/v+/+/v9eas9eWs/9LT/9LS/9HS/8/PocXiosXi/7u6/7Sy1a5x8av8/5ubZorGZ4rHnnAcRmirRWeq/1hPgUoR/9rZ/7q61a5w/5qaupJL9uat/1hO/1dO8CQA1/v9/ysN8SQA/ysOAAAA/yoN////MKUSUgAAAAF0Uk5TAEDm2GYAAACSSURBVBjTVY6HEsIwDEPN3pTdFroSW/r/T8ShlB66nM95khOLlA/ethwkQtrROMpBaRu+7ESj9WBm3dwv3Q9U1lUJXCYj8JEzD3btwb8khyoCFL1ygVMEhZfgBgRgcpXfiLhXM7AhC91NV5AwAPBJLlU83Di4f4CmN5R1QTZr7pFx4Yk2xtimk5oIkbSCBgyfvAGqWiEukoSMuwAAAABJRU5ErkJggg==);}
+/* Contact page */
+#contact label {
+	display: none;
+}
+#contact form {
+	width: 500px;
+	margin: 80px auto;
+}
+#contact form input[type="text"], #contact form input[type="email"]{
+	display: block;
+	width: 500px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	background-color: #000;
+	color: orange;
+	font-family: monospace;
+	padding: 5px;
+}
+#contact form textarea {
+	display: block;
+	width: 500px;
+	height: 250px;
+	border-radius: 10px;
+	background-color: #000;
+	color: orange;
+	font-family: monospace;
+	padding: 5px;
+}
+/* #contact input {
+	background-color: #eeeeee;
+} */

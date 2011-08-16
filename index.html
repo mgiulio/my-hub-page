@@ -201,6 +201,20 @@
 	<div id="contact" class="page">
 		<h2>Get in Touch</h2>
 		<p>Feel free to <a href="http://scr.im/mgiulio" target="blank">drop me a line</a>.</p>
+		<form action="contact.php" method="post"> 
+			<div id="form-inner"> 
+				<label for="name">Name:</label> 
+				<input type="text" class="input" id="name" placeholder="Your name"> 
+        
+            <label for="email">Email:</label> 
+            <input type="email" class="input" id="email" placeholder="Your E-mail address"> 
+        
+            <label for="message">Message:</label> 
+            <textarea class="input textarea" id="message" placeholder="Your message"></textarea> 
+            
+            <input type="submit" class="button" value="Send message"> 
+        </div> 
+		</form> 
 	</div>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
