@@ -15,6 +15,7 @@
 		} 
    </style>
 	<![endif]-->
+	<link rel="stylesheet" href="https://raw.github.com/icebreaker/proudify/master/proudify.min.css" type="text/css"/>
 	<script src="js/modernizr.js"></script>
 </head>
 <body>
@@ -79,119 +80,29 @@
 			I am a full stack web developer/programmer with a focus on <em>front end engineering</em> 
 			with Web Standard. <a href="#skills"><em>More</em></a>.
 		</p>
+		<p style="text-align: center">
+			<a href="http://www.w3.org/html/logo/">
+				<img src="http://www.w3.org/html/logo/badge/html5-badge-h-connectivity-css3-device-graphics-multimedia-performance-semantics-storage.png" width="357" height="64" alt="HTML5 Powered with Connectivity / Realtime, CSS3 / Styling, Device Access, Graphics, 3D &amp; Effects, Multimedia, Performance &amp; Integration, Semantics, and Offline &amp; Storage" title="HTML5 Powered with Connectivity / Realtime, CSS3 / Styling, Device Access, Graphics, 3D &amp; Effects, Multimedia, Performance &amp; Integration, Semantics, and Offline &amp; Storage">
+			</a>
+			<img src="img/jquery-logo.png" alt="jQuery logo" title="jQuery logo">
+		</p>
+		
 		
 		<h3 id="portfolio">Portfolio(<em>because a code snippet is worth 1e4 words</em>)</h3>
-		<ul>
+		<ul id="github">
 			<li><a href="#">DNDfaves</a></li>
 			<li><a href="#">iPad slideshow</a></li>
 			<li><a href="#">jQuery Lifestream plugin</a></li>
+			<li><a href="#">jQuery Wallpaper plugin</a></li>
 			<li><a href="#">This site</a></li>
-			<li><a href="#">jQuery fullPgBgImg plugin</a></li>
 		</ul>
 		
-		<h3 id="skills">Skills List</h3>
-		<ul>
-			<li>Front End
-				<ul>
-					<li>HTML
-						<ul>
-							<li>HTML 4</li>
-							<li>HTML 5</li>
-						</ul>
-					</li>
-					<li>CSS
-						<ul>
-							<li>CSS 2.1</li>
-							<li>CSS 3</li>
-						</ul>
-					</li>
-					<li><em>JavaScript</em>
-						<ul>
-							<li>Very good understanding of the core language</li>
-							<li>Libraries and frameworks
-								<ul>
-									<li>jQuery</li>
-									<li>jQuery UI</li>
-									<li>YUI 2</li>
-									<li>YUI 3</li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-					<li>Design
-						<ul>
-							<li>Use of graphics software
-								<ul>
-									<li>Gimp</li>
-									<li>Inkscape</li>
-									<li>Ps6</li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</li>
-			<li>In the Middle
-				<ul>
-					<li>Ajax</li>
-				</ul>
-			</li>
-			<li>Back End
-				<ul>
-					<li>Server side languages
-						<ul>
-							<li>PHP
-								<ul>
-									<li>Frameworks
-										<ul>
-											<li>Zend</li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							<li>JavaScript with Node.js</li>
-						</ul>
-					</li>
-					<li>DBMS(Datebases)
-						<ul>
-							<li>MySQL</li>
-						</ul>
-					</li>
-				</ul>
-			</li>
-			<li>Other skills
-				<ul>
-					<li>Wordpress development
-						<ul>
-							<li>Themes development</li>
-							<li>Plugins</li>
-							<li>Widgets</li>
-						</ul>
-					</li>
-					<li>Version Control Systems
-						<ul>
-							<li>git and <a href="http://mgiulio.github.com" title="My GitHub account">GitHub</a></li>
-						</ul>
-					</li>
-					<li>Programing languages
-						<ul>
-							<li>C/C++</li>
-							<li>Java</li>
-							<li>Paradigms: OO, functional</li>
-							<li>OOT: UML, design patterns: MVC</li>
-						</ul>
-					</li>
-					<li>Operating systems
-						<ul>
-							<li>Shells: Cygwin, unix cmds</li>
-						</ul>
-					</li>
-					<li>Web Servers: Apache</p>
-					<li>bug hunting</li>
-					<li>Problem solving</li>
-				</ul>
-			</li>
-		</ul>
+		<div style="text-align:center;">
+			<a href='https://developer.mozilla.org/en/javascript' title='JavaScript'>
+				<img src='http://static.jsconf.us/promotejsh.gif' height='150' width='180' alt='JavaScript'/>
+			</a>
+			<!--[if lt IE 7]> <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'> <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div> <![endif]-->
+		</div>
 	</div>
 	
 	<div id="gfx" class="page">
@@ -200,7 +111,14 @@
 	
 	<div id="contact" class="page">
 		<h2>Get in Touch</h2>
-		<p>Feel free to <a href="http://scr.im/mgiulio" target="blank">drop me a line</a>.</p>
+		<p>
+			A contact form in on the way, meanwhile feel free to 
+			<a href="http://scr.im/mgiulio" target="blank">drop me a line</a>,
+			<a href="http://twitter.com/mgiulio">tweet me</a> a message
+			or meet me on some <a href="#lifestream">social network I frequent</a>.
+		</p>
+		.</p>
+		<!--
 		<form action="contact.php" method="post"> 
 			<div id="form-inner"> 
 				<label for="name">Name:</label> 
@@ -215,12 +133,14 @@
             <input type="submit" class="button" value="Send message"> 
         </div> 
 		</form> 
+		-->
 	</div>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 	<script>!window.jQuery && document.write('<script src="http://code.jquery.com/jquery-1.6.2.min.js"><\/script>');</script>
 	<script src="js/jquery.lifestream.js"></script>
 	<script src="js/jquery.fullpgbgimg.js"></script>
+	<script type="text/javascript" src="https://raw.github.com/icebreaker/proudify/master/jquery-proudify.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>

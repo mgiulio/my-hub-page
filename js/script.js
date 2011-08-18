@@ -38,6 +38,10 @@ $('#navbar').delegate('a', 'click',function() {
 
 keyboardShortcuts();	
 //lifestream();
+$('#github').proudify({
+	username: 'mgiulio',
+	service: 'coderwall'
+});
 
 if (window.location.hash) {
 	var el = $(window.location.hash);
