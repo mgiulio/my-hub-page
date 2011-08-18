@@ -15,6 +15,7 @@ h2 {
 	font-family: 'Dancing Script', arial, serif;
    text-shadow: 1px 3px 1px #000;
 	color: #ffffff;
+	font-size: 40px;
 }
 h3 {
 	margin: 10px 0;
@@ -142,6 +143,32 @@ ul {
 #about p.first {
 	clear: both;
 	margin-top: 30px;
+}
+/* WebDev page */
+#webdev h2, #webdev h3 {
+	position: relative;
+}
+#webdev q, #webdev cite {
+	/* position: absolute;
+	top: -11px;
+	left: 200px; */
+	vertical-align: super;
+	font-size: 11px;
+	color: #aaaaaa;
+	font-family: georgia;
+	font-style: italic;
+}
+#webdev #portfolio {
+	margin: 30px 0;
+}
+#webdev  div#portfolio .heading {
+	font-family: georgia;
+	/*font-size: 30px;*/
+	color: #f3c496;
+}
+#webdev  div#portfolio sup {
+	font-size: 11px;
+	color: #aaaaaa;
 }
 /* JLS */
 #lifestream > h2 > a > img {
