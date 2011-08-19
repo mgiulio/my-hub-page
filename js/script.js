@@ -4,12 +4,13 @@ var
 		.click(function() {
 			$(this)
 				.parent()
-				.hide(500, function() { modalMask.fadeOut(500); })
+				.hide(500, function() { currPage = null; modalMask.fadeOut(500); })
 				.end()
 				.detach()
 			;
 			return false;
-		})
+		}),
+	currPage
 ;
 
 $.fullPgBgImg('img/full-page-bg/pieces-of-me.jpg', {
@@ -34,17 +35,33 @@ $.fullPgBgImg('img/full-page-bg/pieces-of-me.jpg', {
 
 // Intercept clicks on internal links
 $(document).delegate('a', 'click', function() {
-	if (!isInternalLink(this.href))
+	var
+		url = this.href,
+		hash,
+		p
+	;
+	
+	//Check for external links
+	if (url.indexOf('#') === -1 || url.substr(0, 15) === 'http://myubpage') {
 		return true;
+	}
+	
+	hash = url.replace(/.*#/, '#'),
+	
+	p = $(hash);
+	if (!p.hasClass('page'))
+		p = p.closest('div.page');
 		
-	showPage($(this.href.replace(/.*#/, '#')));
+	showPage(p);
+	
+	return false;
 });
 /* $('#navbar').delegate('a', 'click', function() {
 	showPage($(this.href.replace(/.*#/, '#')));
 }); */
 
 keyboardShortcuts();	
-//lifestream();
+lifestream();
 
 if (window.location.hash) {
 	var el = $(window.location.hash);
@@ -63,10 +80,21 @@ if (window.location.hash) {
  */
  
 function showPage(p, done) {
+	if (currPage)
+		if (p.attr('id') === currPage.attr('id')) {
+			return;
+		}
+		else {
+			closeBtn.click();
+		}
+	
 	p.append(closeBtn);
 	
 	modalMask.fadeIn(500, function() {
-		p.show(500, done);
+		p.show(500, function() { 
+			currPage = p; 
+			done;
+		});
 	});
 }
 
@@ -105,8 +133,4 @@ function keyboardShortcuts() {
 		if (e.which == 27)
 			closeBtn.click();
 	});	
-}
-
-function isInternalLink(url) {
-	return url.substr(0, 7) === 'http://';
 }
