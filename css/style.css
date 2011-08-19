@@ -11,7 +11,7 @@ body {
 	background-color: #000;
 }
 h2 {
-	margin: 4em 0;
+	margin: 0;
 	font-family: 'Dancing Script', arial, serif;
    text-shadow: 1px 3px 1px #000;
 	color: #ffffff;
@@ -39,6 +39,16 @@ a:active{
 ul {
 	margin-left: 2em;
 }
+q {
+	quotes: '“' '”';
+}
+q:before { 
+	content: open-quote;
+}
+q:after  {
+	content: close-quote;
+}
+/* Navigation bar */
 #navbar {
 	position: fixed;
 	left: 0;
@@ -145,13 +155,10 @@ ul {
 	margin-top: 30px;
 }
 /* WebDev page */
-#webdev h2, #webdev h3 {
-	position: relative;
+#webdev #portfolio h3{
+	/*font-size: 100%;*/
 }
 #webdev q, #webdev cite {
-	/* position: absolute;
-	top: -11px;
-	left: 200px; */
 	vertical-align: super;
 	font-size: 11px;
 	color: #aaaaaa;
