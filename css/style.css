@@ -11,17 +11,17 @@ body {
 	background-color: #000;
 }
 h2 {
-	margin-bottom: 20px;
+	margin: 4em 0;
 	font-family: 'Dancing Script', arial, serif;
    text-shadow: 1px 3px 1px #000;
 	color: #ffffff;
 	font-size: 40px;
 }
 h3 {
-	margin: 10px 0;
+	margin: 3em 0;
 }
 p {
-	margin: 10px 0;
+	margin: 2em 0;
 }
 a {
 	color: #ffa500;
@@ -157,6 +157,9 @@ ul {
 	color: #aaaaaa;
 	font-family: georgia;
 	font-style: italic;
+}
+#webdev #techno-logos {
+	text-align: center; 
 }
 #webdev #portfolio {
 	margin: 30px 0;
