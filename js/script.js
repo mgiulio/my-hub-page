@@ -32,9 +32,16 @@ $.fullPgBgImg('img/full-page-bg/pieces-of-me.jpg', {
 		//'img/full-page-bg/layout_grid.gif'
 });
 
-$('#navbar').delegate('a', 'click',function() {
+// Intercept clicks on internal links
+$(document).delegate('a', 'click', function() {
+	if (!isInternalLink(this.href))
+		return true;
+		
 	showPage($(this.href.replace(/.*#/, '#')));
 });
+/* $('#navbar').delegate('a', 'click', function() {
+	showPage($(this.href.replace(/.*#/, '#')));
+}); */
 
 keyboardShortcuts();	
 //lifestream();
@@ -98,4 +105,8 @@ function keyboardShortcuts() {
 		if (e.which == 27)
 			closeBtn.click();
 	});	
+}
+
+function isInternalLink(url) {
+	return url.substr(0, 7) === 'http://';
 }
