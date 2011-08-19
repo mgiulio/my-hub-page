@@ -54,7 +54,7 @@ $(document).delegate('a', 'click', function() {
 		
 	showPage(p);
 	
-	return false;
+	return true;
 });
 /* $('#navbar').delegate('a', 'click', function() {
 	showPage($(this.href.replace(/.*#/, '#')));
