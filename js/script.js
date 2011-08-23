@@ -8,33 +8,54 @@ var
 				.end()
 				.detach()
 			;
+			currPage = null, // the jQuery object that wraps the DOM element of the current visible page
+			location.hash = '';
 			return false;
 		}),
 	currPage
 ;
 
-$.fullPgBgImg('img/full-page-bg/pieces-of-me.jpg', {
-	//technique: 'CSS3'
-	//image: 
-		//'img/full-page-bg/pieces-of-me.jpg'
-		//'img/full-page-bg/toys_by_hcube.jpg'
-		//'img/full-page-bg/toys_by_momoclax.jpg'
-		//'img/full-page-bg/Empire_City_by_gamefan84.jpg'
-		//'img/full-page-bg/food___by_laprovocation.jpg'
-		//'img/full-page-bg/food_by_PoetryInDespair1.jpg', 2.95 Mb!!!
-		//'img/full-page-bg/Miami_City_by_Furiousxr.jpg',
-		//'img/full-page-bg/The_city_turns_Orange_by_gilad.jpg',
-		//'img/full-page-bg/amsler_grid.gif',
-		//'img/full-page-bg/escher_grid.jpg',
-		//'img/full-page-bg/grid.png',
-		//'img/full-page-bg/grid-4quad12x12.gif',
-		//'img/full-page-bg/grid2000b.gif',
-		//'img/full-page-bg/img-amsler-grid.gif',
-		//'img/full-page-bg/layout_grid.gif'
+$.fullPgBgImg('img/full-page-bg/pieces-of-me.jpg');
+
+$(window).hashchange(function(e) {
+	var
+		newHash = location.hash
+	;
+	
+	if (newHash === '') {
+		if (currPage)
+			closeBtn.click();
+		return;
+	}
+		
+	// Find the page that contains the hash
+	newHash = '#' + $(newHash).closest('.page').attr('id');
+	
+	if (!currPage)
+		showPage(newHash);
+	else {
+		// A page is visible:
+		// Is the newhash inside it?
+		if (currPage.find(newHash).length > 0 || newHash === '#' + currPage.attr('id')) {
+			// Do nothing
+			console.log(newHash);
+			console.log('do nothing');
+			console.log(currPage);
+		}
+		else {
+			//Closecurrent page and show new one
+			console.log('closecurrent');
+			closeBtn.click();
+			location.hash = newHash;
+			//showPage(newHash);
+		}
+	}
 });
 
+$(window).hashchange();
+
 // Intercept clicks on internal links
-$(document).delegate('a', 'click', function() {
+/* $(document).delegate('a', 'click', function() {
 	var
 		url = this.href,
 		hash,
@@ -55,15 +76,15 @@ $(document).delegate('a', 'click', function() {
 	showPage(p);
 	
 	return true;
-});
+}); */
 /* $('#navbar').delegate('a', 'click', function() {
 	showPage($(this.href.replace(/.*#/, '#')));
 }); */
 
 keyboardShortcuts();	
-lifestream();
+//lifestream();
 
-if (window.location.hash) {
+/* if (window.location.hash) {
 	var el = $(window.location.hash);
 	if (el.hasClass('page'))
 		showPage(el);
@@ -73,13 +94,26 @@ if (window.location.hash) {
 			window.location.href = window.location.href;
 		});
 	}
-}
+} */
 
 /*
  * Function definitions
  */
  
-function showPage(p, done) {
+ function showPage(hash, done) {
+	var p = $(hash);
+	
+	p.append(closeBtn);
+	
+	modalMask.fadeIn(500, function() {
+		p.show(500, function() { 
+			currPage = p; 
+			done;
+		});
+	});
+}
+
+/* function showPage(p, done) {
 	if (currPage)
 		if (p.attr('id') === currPage.attr('id')) {
 			return;
@@ -96,7 +130,7 @@ function showPage(p, done) {
 			done;
 		});
 	});
-}
+} */
 
 function lifestream() {
 	$(
