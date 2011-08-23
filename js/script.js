@@ -27,29 +27,22 @@ $(window).hashchange(function(e) {
 			closeBtn.click();
 		return;
 	}
-		
-	// Find the page that contains the hash
-	newHash = '#' + $(newHash).closest('.page').attr('id');
 	
-	if (!currPage)
+	if (!currPage) {
+		// Find the page that contains the hash
+		newHash = '#' + $(newHash).closest('.page').attr('id');
 		showPage(newHash);
-	else {
-		// A page is visible:
-		// Is the newhash inside it?
-		if (currPage.find(newHash).length > 0 || newHash === '#' + currPage.attr('id')) {
-			// Do nothing
-			console.log(newHash);
-			console.log('do nothing');
-			console.log(currPage);
-		}
-		else {
-			//Closecurrent page and show new one
-			console.log('closecurrent');
-			closeBtn.click();
-			location.hash = newHash;
-			//showPage(newHash);
-		}
+		return;
 	}
+	
+	// A page is visible:
+	// Is the newhash inside it?
+	if (currPage.find(newHash).length > 0 || newHash === '#' + currPage.attr('id'))
+		return;
+
+	//Close current page and show new one
+	closeBtn.click();
+	location.hash = newHash;
 });
 
 $(window).hashchange();
