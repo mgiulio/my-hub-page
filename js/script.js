@@ -22,16 +22,19 @@ $(window).hashchange(function(e) {
 		newHash = location.hash
 	;
 	
-	if (newHash === '') {
+	if (newHash === '' || newHash === '#') {
 		if (currPage)
 			closeBtn.click();
 		return;
 	}
 	
 	if (!currPage) {
-		// Find the page that contains the hash
-		pageHash = '#' + $(newHash).closest('.page').attr('id');
-		showPage(pageHash);
+		var enclosingPage = $(newHash).closest('.page');
+		if (enclosingPage.length === 0) {
+			location.hash = '#';
+			return;
+		}
+		showPage('#' + enclosingPage.attr('id'));
 		location.hash = newHash;
 		return;
 	}
