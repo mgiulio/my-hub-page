@@ -30,8 +30,9 @@ $(window).hashchange(function(e) {
 	
 	if (!currPage) {
 		// Find the page that contains the hash
-		newHash = '#' + $(newHash).closest('.page').attr('id');
-		showPage(newHash);
+		pageHash = '#' + $(newHash).closest('.page').attr('id');
+		showPage(pageHash);
+		location.hash = newHash;
 		return;
 	}
 	
