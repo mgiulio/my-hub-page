@@ -51,47 +51,8 @@ $(window).hashchange(function(e) {
 
 $(window).hashchange();
 
-// Intercept clicks on internal links
-/* $(document).delegate('a', 'click', function() {
-	var
-		url = this.href,
-		hash,
-		p
-	;
-	
-	//Check for external links
-	if (url.indexOf('#') === -1 || url.substr(0, 15) === 'http://myubpage') {
-		return true;
-	}
-	
-	hash = url.replace(/.*#/, '#'),
-	
-	p = $(hash);
-	if (!p.hasClass('page'))
-		p = p.closest('div.page');
-		
-	showPage(p);
-	
-	return true;
-}); */
-/* $('#navbar').delegate('a', 'click', function() {
-	showPage($(this.href.replace(/.*#/, '#')));
-}); */
-
 keyboardShortcuts();	
 //lifestream();
-
-/* if (window.location.hash) {
-	var el = $(window.location.hash);
-	if (el.hasClass('page'))
-		showPage(el);
-	else {
-		var page = el.closest('div.page');
-		showPage(page, function() {
-			window.location.href = window.location.href;
-		});
-	}
-} */
 
 /*
  * Function definitions
@@ -109,25 +70,6 @@ keyboardShortcuts();
 		});
 	});
 }
-
-/* function showPage(p, done) {
-	if (currPage)
-		if (p.attr('id') === currPage.attr('id')) {
-			return;
-		}
-		else {
-			closeBtn.click();
-		}
-	
-	p.append(closeBtn);
-	
-	modalMask.fadeIn(500, function() {
-		p.show(500, function() { 
-			currPage = p; 
-			done;
-		});
-	});
-} */
 
 function lifestream() {
 	$(
