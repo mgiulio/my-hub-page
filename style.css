@@ -91,7 +91,7 @@ q:after  {
 	height: 34px;
 	top: -17px;
 	right: -17px;
-	background: no-repeat center center url(../img/overlay-close-btn.png);
+	background: no-repeat center center url(img/overlay-close-btn.png);
 	text-indent: -999999px;
 }
 #modal-mask {
