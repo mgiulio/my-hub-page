@@ -58,6 +58,7 @@ q:after  {
 	text-align: center;
 	list-style: none;
 	background-color: #000000;
+	padding-bottom: 3px;
 }
 #navbar > li {
 	display: inline;
